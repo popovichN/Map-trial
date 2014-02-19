@@ -1,0 +1,49 @@
+#gia-mapwrapper {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+#gia-mapwrapper h1 {
+    font-size: 2.0em;
+    margin-bottom: 0.3em;
+}
+/*
+#leadin {
+    margin-bottom: 2.0em;
+}
+#direct p {
+    margin-top: 2.0em;
+    background: #e0e0e0;
+    padding: 0.4em;
+    width: 900px;
+}
+*/
+#gia-tooltip {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    -moz-box-shadow:    1px 1px 2px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 2px 2px #ccc;
+    box-shadow:         1px 1px 2px 2px #ccc;
+}   
+}
+#gia-tooltip h3 {
+    font-size: 1.0em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #fff;
+}
+#gia-tooltip p {
+    font-size: 0.9em;
+}
+
+.clr { clear: both; 
+}
+
+#map-title {
+    margin-bottom: 15px;
+
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+		<title>Naloxone map</title>
+
+       <link rel="stylesheet" type="text/css" href="reset.css">
+
+       <link rel="stylesheet" type="text/css" href="od.css">
+
+       <script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+
+       <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+	<div id="gia-mapwrapper">
+		<div id="map-title">Here is my map</div>
+	    <div id="gia-map"></div>
+	    <div id="gia-tooltip"></div>
+
+	</div>
+
+<script src="blankmap.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+
+
+// Helper function to determine color. Currently a blue-gray color scheme.
+function getColor(val) {
+       
+       if (val == 1) {    
+           var col = "#E88C78"; //"#f4e572"; //"#6f6409"; //"#fda6b5"; //"#b4e68d"; //"#e5e5e5"; 
+       } else if (val == 2) {
+           var col = "#CA2819"; //"#ddc611"; //"#fb3154"; //"#8fda56"; //"#c3c3c3"; 
+       } else if (val == 3) {
+           var col = "#8B1E14"; //"#9f8e0d"; //"#a1031f"; //"#64b427"; //"#999"; 
+       } else {
+           var col = "#ccc"; //"#6f6409"; //"#5e0212"; //"#356015"; //"#4c4c4c"; 
+       }
+       return(col);
+    
+} // @end getColor
+
+
+$(document).ready(function () {
+
+// Load the data.      
+
+    $.getJSON('od.json', function(data) {
+            
+           var tooltip = $("#gia-tooltip").hide();
+           var tiphtml = "";
+           var over = false;
+
+           // Store data by state abbreviation.            
+           var nalox = {};
+           $.each(data.states, function(i,state) { 
+               // $("#debug").append(state.name);
+               nalox[state.abbrev] = { "name":state.name, "val":state.access, "good":state.good, "nal":state.nal };
+           }); // @end each
+
+        // Set properties for each state.
+           for (var i=0; i < states.length; i++) {
+               var s = states[i];
+               var id = s.data("id");
+               if (id == "SP") { id = "MI"; } // A hack to deal with two-part Michigan in SVG
+               
+               // Set state color.
+               s.attr({
+                   fill: getColor(nalox[id].val),
+                   // fill: "#d6d6d6",
+                   stroke: "#fff" 
+               });
+            // Highlight state and show tooltip on mouse over.
+               s.mouseover(function() {
+                   this.toFront();
+                   var abbrev = this.data("id");
+                   if (abbrev == 'SP' || abbrev == 'MI') {
+                       SP.attr({
+                           stroke: "#000",
+                           'stroke-width': '1.5'
+                       });
+                       MI.attr({
+                           stroke: "#000",
+                           'stroke-width': '1.5'
+                       });
+                   } else {
+                       this.attr({
+                           stroke: "#000",
+                           'stroke-width': '1.5'
+                       });
+                   }
+
+                   console.log ( nalox[abbrev].law );
+
+                   tiphtml = '<h3>'+nalox[abbrev].name+'</h3><p>Naloxone available in state? '+nalox[abbrev].nal+' <br/>Good Samaritan law? '+nalox[abbrev].good+' </p>';
+                   over = true;
+                   $(tooltip).show();
+               });
+            // Remove highlight and tool tip.
+               s.mouseout(function() {
+                   var abbrev = this.data("id");
+                   if (abbrev == 'SP' || abbrev == 'MI') {
+                       SP.attr({
+                           stroke: "#fff",
+                           'stroke-width': "1"
+                       });
+                       MI.attr({
+                           stroke: "#fff",
+                           'stroke-width': "1"
+                       });
+                   } else {
+                       this.attr({
+                           stroke: "#fff",
+                           'stroke-width': "1"
+                       });
+                   }
+                   over = false;
+                   $(tooltip).hide();
+               });
+               
+            } // @end for loop
+           
+           
+        // Set tooltip text and position.
+            $(document).mousemove(function(e) {
+                if (over) {
+                    $(tooltip).css("left", e.clientX+15).css("top", e.clientY+15);
+                    $(tooltip).html(tiphtml);
+                }
+            });
+            
+            
+            
+    }); // @end getJSON
+});  // @end ready   
+
+</script>
+
+
+</body>
+
+</html>

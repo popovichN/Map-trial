@@ -1,0 +1,359 @@
+{ "states": [
+{
+	"abbrev":"AL",
+	"name":"Alabama",
+	"nal": "Unavailable",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"AK",
+	"name":"Alaska",
+	"nal": "Unavailable",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"AZ",
+	"name":"Arizona",
+	"nal": "Unavailable",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"AR",
+	"name":"Arkansas",
+	"nal": "Unavailable",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"CA",
+	"name":"California",
+	"nal": "Yes - lay use; 3rd party prescription",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"CO",
+	"name":"Colorado",
+	"nal": "Yes - lay use; 3rd party prescription",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"CT",
+	"name":"Connecticut",
+	"nal": "Unavailable",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"DE",
+	"name":"Delaware",
+	"nal": "No",
+	"good": "Yes",
+	"access":2
+},
+{
+	"abbrev":"DC",
+	"name":"Distric of Columbia",
+	"nal": "???",
+	"good": "???",
+	"access":0
+},
+{
+	"abbrev":"FL",
+	"name":"Florida",
+	"nal": "Unavailable",
+	"good": "Yes",
+	"access":2
+},
+{
+	"abbrev":"GA",
+	"name":"Georgia",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"HI",
+	"name":"Hawaii",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"ID",
+	"name":"Idaho",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"IL",
+	"name":"Illinois",
+	"nal": "Yes - lay use; 3rd party prescription; state program",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"IN",
+	"name":"Indiana",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"IA",
+	"name":"Iowa",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"KS",
+	"name":"Kansas",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"KY",
+	"name":"Kentucky",
+	"nal": "Yes - lay use; 3rd party prescription",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"LA",
+	"name":"Louisiana",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"ME",
+	"name":"Maine",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"MD",
+	"name":"Maryland",
+	"nal": "Yes - lay use; 3rd party prescription; state program",
+	"good": "No",
+	"access":1
+},
+{
+	"abbrev":"MA",
+	"name":"Massachusettes",
+	"nal": "Yes - lay use; 3rd party prescription",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"MI",
+	"name":"Michigan",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"MN",
+	"name":"Minnesota",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"MS",
+	"name":"Mississippi",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"MO",
+	"name":"Missouri",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"MT",
+	"name":"Montana",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"NE",
+	"name":"Nebraska",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"NV",
+	"name":"Nevada",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"NH",
+	"name":"New Hampshire",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"NJ",
+	"name":"New Jersey",
+	"nal": "Yes – lay use; 3rd party prescribers",
+	"good": "Yes",
+	"access":3
+},
+{
+	"abbrev":"NM",
+	"name":"New Mexico",
+	"nal": "Yes - lay use and administration by special permission",
+	"good": "Yes",
+	"access":3
+},
+{
+	"abbrev":"NY",
+	"name":"New York",
+	"nal": "Yes - available from designated harm reduction centers and <br/>lay use and administration by special permission",
+	"good": "Yes",
+	"access":3
+},
+{
+	"abbrev":"NC",
+	"name":"North Carolina",
+	"nal": "Yes – lay use; 3rd party prescription",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"ND",
+	"name":"North Dakota",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"OH",
+	"name":"Ohio",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"OK",
+	"name":"Oklahoma",
+	"nal": "Yes – 3rd party prescription",
+	"good": "No",
+	"access":1
+},
+{
+	"abbrev":"OR",
+	"name":"Oregon",
+	"nal": "Yes – lay use; 3rd party prescription",
+	"good": "No",
+	"access":1
+},
+{
+	"abbrev":"PA",
+	"name":"Pennsylvania",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"RI",
+	"name":"Rhode Island",
+	"nal": "Yes – lay use",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"SC",
+	"name":"South Carolina",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"SD",
+	"name":"South Dakota",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"TN",
+	"name":"Tennessee",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"TX",
+	"name":"Texas",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"UT",
+	"name":"Utah",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"VT",
+	"name":"Vermont",
+	"nal": "Yes – lay use; 3rd party prescription; state program",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"VA",
+	"name":"Virginia",
+	"nal": "Yes – lay use; 3rd party prescription; state program",
+	"good": "No",
+	"access":1
+},
+{
+	"abbrev":"WA",
+	"name":"Washington",
+	"nal": "Yes – lay use; 3rd party prescription; state program",
+	"good": "No",
+	"access":3
+},
+{
+	"abbrev":"WV",
+	"name":"West Virginia",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"WI",
+	"name":"Wisconsin",
+	"nal": "No",
+	"good": "No",
+	"access":0
+},
+{
+	"abbrev":"WY",
+	"name":"Wyoming",
+	"nal": "No",
+	"good": "No",
+	"access":0
+}
+] }
