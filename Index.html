@@ -5,9 +5,9 @@
 <head>
 		<title>Naloxone map</title>
 
-       <link rel="stylesheet" type="text/css" href="reset.css">
+       <link rel="stylesheet" type="text/css" href="css/reset.css">
 
-       <link rel="stylesheet" type="text/css" href="od.css">
+       <link rel="stylesheet" type="text/css" href="css/od.css">
 
        <script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
 
@@ -23,7 +23,7 @@
 
 	</div>
 
-<script src="blankmap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/blankmap.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
 
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 // Load the data.      
 
-    $.getJSON('od.json', function(data) {
+    $.getJSON('js/od.json', function(data) {
             
            var tooltip = $("#gia-tooltip").hide();
            var tiphtml = "";
